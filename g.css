@@ -1,0 +1,221 @@
+/* ====== Global Reset ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #222;
+}
+
+/* ====== Header ====== */
+.header {
+  background: url(https://images.pexels.com/photos/635279/pexels-photo-635279.jpeg?cs=srgb&dl=pexels-bella-white-201200-635279.jpg&fm=jpg)
+    center/cover no-repeat;
+  text-align: center;
+  color: white;
+  padding: 80px 20px 60px;
+}
+
+.header img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 15px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.header p {
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+/* ====== Navigation ====== */
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #e63946;
+}
+
+/* ====== Filter Section ====== */
+.filter-section {
+  background: white;
+  margin: 30px auto;
+  width: 85%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.filter-section input,
+.filter-section select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 180px;
+}
+
+.filter-section button {
+  background-color: #e63946;
+  border: none;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.filter-section button:hover {
+  background-color: #c62f3a;
+}
+
+/* ====== Books Section ====== */
+.book-section {
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.book-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.book-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.book-info h3 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.book-info p {
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.book-info .price {
+  color: #e63946;
+  font-weight: 600;
+}
+
+.book-info button {
+  background-color: #e63946;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.book-info button:hover {
+  background-color: #c62f3a;
+}
+
+/* ====== Pagination ====== */
+.pagination {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.pagination a {
+  text-decoration: none;
+  background: #eee;
+  padding: 8px 12px;
+  margin: 0 3px;
+  color: #333;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.pagination a:hover,
+.pagination a.active {
+  background: #e63946;
+  color: white;
+}
+
+/* ====== Gallery ====== */
+.gallery {
+  width: 90%;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* ====== Footer ====== */
+footer {
+  background: #f8f8f8;
+  text-align: center;
+  padding: 20px 0;
+  color: #555;
+  font-size: 0.9rem;
+  margin-top: 30px;
+  border-top: 1px solid #ddd;
+}
+
+footer p:first-child {
+  margin-bottom: 8px;
+}
+
+.book-info a{
+  color: white;
+  text-decoration: none;
+}
